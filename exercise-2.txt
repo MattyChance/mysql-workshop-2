@@ -1,0 +1,7 @@
+mysql> insert into Account (id, email, password) values (1, 'matty@gmail.com', 'password');
+mysql> insert into AddressBook (accountId, name, createdOn) values (2, 'Matty', 2016-10-17);
+mysql> insert into Entry
+    -> (firstName, lastName, birthday)
+    -> value
+    -> ('Tom', 'Hanks', 1967-11-23),
+    -> ('Alice', 'Kim', 1978-01-23);
