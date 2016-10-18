@@ -1,0 +1,21 @@
+Exercise 9
+
+How many Accounts exist?
+mysql> select COUNT(id) from Account;
++-----------+
+| COUNT(id) |
++-----------+
+|      1000 |
++-----------+
+How many Address Books exist?
+mysql> select count(id) from AddressBook;
++-----------+
+| count(id) |
++-----------+
+|      1100 |
+How many Address Book Entries exist?
+mysql> select count(id) from Entry;
++-----------+
+| count(id) |
++-----------+
+|      4000 |

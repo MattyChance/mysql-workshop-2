@@ -1,0 +1,31 @@
+Exercise 3
+
+Retrieve data from the previously inserted decodemtl_addressbook.Account row
+mysql> select id, email, password, createdOn from Account;
++----+-----------------+----------+---------------------+
+| id | email           | password | createdOn           |
++----+-----------------+----------+---------------------+
+|  1 | matty@gmail.com | password | 0000-00-00 00:00:00 |
++----+-----------------+----------+---------------------+
+1 row in set (0.00 sec)
+
+
+Retrieve data from the previously inserted decodemtl_addressbook.AddressBook row
+mysql> select id, accountId, name, createdOn, modifiedOn from AddressBook;
++----+-----------+-------+---------------------+------------+
+| id | accountId | name  | createdOn           | modifiedOn |
++----+-----------+-------+---------------------+------------+
+|  1 |         2 | Matty | 0000-00-00 00:00:00 | NULL       |
++----+-----------+-------+---------------------+------------+
+1 row in set (0.00 sec)
+
+Retrieve data from the previously inserted decodemtl_addressbook.Entry rows
+mysql> select id, addressBookId, firstName, lastName, birthday from Entry;
++----+---------------+-----------+----------+---------------------+
+| id | addressBookId | firstName | lastName | birthday            |
++----+---------------+-----------+----------+---------------------+
+|  1 |             0 | Matty     | Chance   | 0000-00-00 00:00:00 |
+|  2 |             0 | Tom       | Hanks    | 0000-00-00 00:00:00 |
+|  3 |             0 | Alice     | Kim      | 0000-00-00 00:00:00 |
++----+---------------+-----------+----------+---------------------+
+3 rows in set (0.00 sec)

@@ -1,0 +1,21 @@
+Exercise 4
+
+Modify the decodemtl_addressbook.Account row
+mysql> update Account
+    -> set createdOn = '2016-10-17 18:56:00'
+    -> where id=1;
+    
+    
+Modify the decodemtl_addressbook.AddressBook row
+mysql> update AddressBook
+    -> set accountId = 3456, createdOn = '2016-10-17 19:02:00', modifiedOn = '2016-10-18 20:00:00'
+    -> where id = 1;
+
+Modify the three decodemtl_addressbook.Entry rows using one query only
+mysql> update Entry
+    -> set birthday = case firstName
+    -> when 'Matty' then '1986-09-05 23:10:00'
+    -> when 'Tom' then '1963-10-22 23:29:00'
+    -> when 'Alice' then '1989-11-19 16:45:39'
+    -> end
+    -> where id in (1, 2, 3);

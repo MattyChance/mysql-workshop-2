@@ -1,0 +1,9 @@
+Exercise 5
+
+Delete all data from decodemtl_addressbook.Entry without using a DELETE statement
+mysql> truncate table Entry;
+
+Exercise 6
+
+Delete decodemtl_addressbook.Account and all associated date
+mysql> truncate table Account;
